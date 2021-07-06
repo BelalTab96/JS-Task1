@@ -1,0 +1,22 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.container .result{
+    font-size: 20px;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.container .result span{
+    color: red;
+}

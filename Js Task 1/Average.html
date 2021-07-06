@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Calculate The Average</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="average.css">
+</head>
+<body>
+    
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark black">
+        <p class="navbar-brand pt-3">Belal El-Tablawy</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+            aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="Profile.html">About Me
+                <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Calculator.html">Calculator</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Average.html">Calculate The Average</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item avatar">
+                <a class="nav-link p-0" href="#">
+                <img src="img/me.jpg" class="rounded-circle z-depth-0"
+                    alt="avatar image" height="35">
+                </a>
+            </li>
+            <li>
+                <i class="far fa-moon mx-5 fa-2x white-text" id="light-dark" onclick="lightDark()"></i>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/.Navbar -->
+
+    <section class="container mt-5">
+        <div class="row mb-4 mt-4 d-flex justify-content-center">
+            <input type="text" class="number1 mx-2 mb-3 col-lg-2 col-sm-12" id="num1" placeholder="Enter number">
+            <input type="text" class="number2 mx-2 mb-3 col-lg-2 col-sm-12" id="num2" placeholder="Enter number">
+            <input type="text" class="number3 mx-2 mb-3 col-lg-2 col-sm-12" id="num3" placeholder="Enter number">
+            <input type="text" class="number4 mx-2 mb-3 col-lg-2 col-sm-12" id="num4" placeholder="Enter number">
+            <input type="text" class="number5 mx-2 mb-3 col-lg-2 col-sm-12" id="num5" placeholder="Enter number">
+            <input type="text" class="number6 mx-2 mb-3 col-lg-2 col-sm-12" id="num6" placeholder="Enter number">
+            <input type="text" class="number7 mx-2 mb-3 col-lg-2 col-sm-12" id="num7" placeholder="Enter number">
+            <input type="text" class="number8 mx-2 mb-3 col-lg-2 col-sm-12" id="num8" placeholder="Enter number">
+            <input type="text" class="number9 mx-2 mb-3 col-lg-2 col-sm-12" id="num9" placeholder="Enter number">
+            <input type="text" class="number10 mx-2 mb-3 col-lg-2 col-sm-12" id="num10" placeholder="Enter number">
+        </div>
+        <button class="d-block m-auto col-lg-3 col-sm-12" id="averageNum" onclick="calcAverage()">CALCULATE THE AVERAGE</button>
+        <p class="result mt-5 text-center col-lg-12 col-sm-12" id="text">The average is: <span id="result">25</span></p>
+    </section>
+
+    <!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+<script type="text/javascript" src="average.js"></script>
+
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript">
+    var a = document.getElementById('disc-50');
+    a.onclick = function () {
+    Clipboard_CopyTo("T9TTVSQB");
+    var div = document.getElementById('code-success');
+    div.style.display = 'block';
+    setTimeout(function () {
+        document.getElementById('code-success').style.display = 'none';
+    }, 900);
+    };
+
+    function Clipboard_CopyTo(value) {
+    var tempInput = document.createElement("input");
+    tempInput.value = value;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    }
+</script>
+</body>
+</html>

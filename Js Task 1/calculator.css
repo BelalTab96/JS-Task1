@@ -1,0 +1,67 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    background: black;
+    border-radius: 50px;
+    color: white;
+    height: 500px;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+}
+
+.value {
+    overflow: hidden;
+    width: 250px;
+    font-size: 56px;
+    font-weight: 300;
+    margin-right: 50px;
+    height: 100px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.buttons-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.button {
+    align-items: center;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 25px;
+    height: 50px;
+    justify-content: center;
+    transition: filter .3s;
+    width: 50px;
+}
+
+.button.function {
+    color: black;
+    background: #a5a5a5;
+}
+
+.button.operator {
+    background: #f1a33c;
+}
+
+.button.number-0 {
+    border-radius: 55px;
+    grid-column: 1 / span 2;
+    justify-content: flex-start;
+    padding-left: 20px;
+    width: 120px;
+    text-align: left;
+}
+
+.button:active,
+.button:focus {
+    filter: brightness(120%);
+}
